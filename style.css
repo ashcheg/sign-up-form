@@ -1,11 +1,57 @@
 .container {
     display: flex;
 }
+
 form {
     display: flex;
     flex-direction: column;
 }
 
+section {
+    display: flex;
+    flex-wrap: wrap;
+    border: 1px solid black;
+    max-width: 700px;
+}
+
+section div {
+}
+
+.left {
+    background-image: url(./halie-west-25xggax4bSA-unsplash.jpg);
+    background-position: center;
+    background-size: auto;
+    width: 45vh;
+    margin: 0%;
+    padding: 0%;
+}
+
+.logo {
+    height: auto;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.288);
+    padding-top: 5px;
+    padding-bottom: 5px;
+    
+
+}
+
+.logo_head {
+    height: 5vh;
+}
+
+.logo_name {
+    color: aliceblue;
+}
+
+.right {
+    padding-left: 10px;
+}
+
 button {
     width: 180px;
+    margin-top: 10px;
 }

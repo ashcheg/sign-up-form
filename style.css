@@ -17,16 +17,12 @@ body {
     margin: auto;
 }
 
-form {}
-
 .fields {
     display: flex;
     flex-wrap: wrap;
     gap: 15px;
-    border
-    border-top-color: #888888;
-    padding: 0px 0px 20px 50px;
-    box-shadow: 0px 5px 0px #888888;
+    padding: 0px 0px 50px 50px;
+    box-shadow: 5px 5px 5px #888888;
 }
 .fields >*{
      display: flex;
@@ -38,10 +34,16 @@ form {}
 .fields div {
     font-weight: 300;
     font-size: 0.8rem;
+    flex-basis: 45%;
 }
 
 .fields p {
     flex-basis: 100%;
+}
+
+label {
+    font-size: 0.6rem;
+    font-weight: 550;
 }
 
 .left {
@@ -52,7 +54,7 @@ form {}
     background-size: cover;
     text-align: center;
     height: 100vh;
-    width: 45%;
+    min-width: 40%;
     margin: 0%;
     padding: 0%;
     color: aliceblue;
@@ -88,7 +90,6 @@ form {}
 
 .right {
     align-self: center;
-    max-width: 650px;
 }
 
 .right >* {
@@ -98,6 +99,11 @@ form {}
 .right >p {
     padding-left: 50px;
     padding-right: 50px;
+    max-width: 630px;
+}
+
+form {
+    margin-top: 50px;
 }
 
 button {
@@ -114,8 +120,20 @@ button {
 
 input {
     width: 200px;
-    height: 25px;
+    height: 20px;
     border-radius: 5px;
+    border: 1px solid #E5E7EB;
+    outline: none;
+    padding: 3px 3px 3px 7px;
+}
+
+input:invalid {
+    border: 5px solid #ee0b0b;
+}
+
+input:focus {
+    border: 1px solid blue;
+    box-shadow: 1px 1px 2px #888888bd;
 }
 
 p {
@@ -140,4 +158,8 @@ a {
 
 a:link {
     color:#596D48;
+}
+
+.error {
+    border: 1px solid #ee0b0b;
 }

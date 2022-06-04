@@ -17,26 +17,30 @@ body {
     margin: auto;
 }
 
-section {
+form {}
+
+.fields {
     display: flex;
     flex-wrap: wrap;
     gap: 15px;
+    border
     border-top-color: #888888;
-    padding: 20px 0px 20px 50px;
-    box-shadow: 0px 5px 5px #888888;
+    padding: 0px 0px 20px 50px;
+    box-shadow: 0px 5px 0px #888888;
 }
-section >*{
+.fields >*{
      display: flex;
+     flex: 1;
      flex-direction: column;
      gap:4px
 }
 
-section div {
+.fields div {
     font-weight: 300;
     font-size: 0.8rem;
 }
 
-section p {
+.fields p {
     flex-basis: 100%;
 }
 
@@ -97,8 +101,15 @@ section p {
 }
 
 button {
+    font-size: 0.9rem;
     width: 180px;
     margin-top: 30px;
+    background-color: #596D48;
+    color: aliceblue;
+    font-weight: 700;
+    border-radius: 5px;
+    padding: 10px 5px 10px 5px;
+    margin-left: 50px;
 }
 
 input {
@@ -112,10 +123,21 @@ p {
 }
 
 .login {
-    font-size: 0.7rem;
+    font-size: 0.9rem;
     font-weight: 500;
+    margin-top: 20px;
+    margin-left: 50px;
 }
 
 h1 {
     margin: 0;
+} 
+
+a {
+    text-decoration: none;
+    font-weight: 600;
+}
+
+a:link {
+    color:#596D48;
 }
